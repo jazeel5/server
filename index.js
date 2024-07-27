@@ -8,7 +8,12 @@ app.use(
   cors()
 );
 const PORT = process.env.PORT || 4000;
+app.get("/", (req, res) => {
+  res.json({ message: "server file" })
+})
+
 app.use("/customer", require("./Routes/customer_Routes"));
+
 
 //uploads
 // app.use("/uploads/customer", express.static("./Uploads/customer"));
