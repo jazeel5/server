@@ -2,6 +2,8 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 const env = require("dotenv");
 env.config();
 
+// MONGO_URI="mongodb+srv://gauthamkotian020:RbsFEavCpsZ3H3KP@login-app.5m8yqde.mongodb.net/?retryWrites=true&w=majority&appName=login-app"
+
 const uri = process.env.MONGO_URI;
 
 let client;
