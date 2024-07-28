@@ -15,7 +15,7 @@ app.use(cors());
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({ message: "server file" });
+  res.json({ message: "working server file" });
 });
 
 app.use("/customer", customerRoutes);
